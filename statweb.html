@@ -29,14 +29,14 @@
           <p>Date of Birth: <span id="dob">June/26/1990</span></p>
           <p>Place of Birth: <span id="pob">North Achefer Ysmala</span></p>
           <p>Gender: <span id="pb">Male</span></p>
-          <p>Status: <span id="stat">Student</span></p>
+          <p>Status: <span id="stat">4th year Software Engineering Student</span></p>
         </div>
       </section>
       <section class="bio">
         <div id="about">
           <h2>About me</h2>
           <p>
-            I am Gebrehiwot Agumass. And I have completed my primary education
+            I'm Gebrehiwot Agumass. And I have completed my primary education
             at Ysmala Primary School, followed by high school at Bahir Dar STEM
             incubation Center. Then went on to pursue higher education at BIT
             (Bahir Dar Institute of Technology). Through my educational journey,
@@ -68,22 +68,28 @@
                 />
               </li>
               <li>
-                <img
-                  src="https://download.logo.wine/logo/React_(web_framework)/React_(web_framework)-Logo.wine.png"
-                  alt="React Logo"
-                />
+                <figure>
+                  <img
+                    src="https://download.logo.wine/logo/React_(web_framework)/React_(web_framework)-Logo.wine.png"
+                    alt="React"
+                  />
+                  <figcaption>React</figcaption>
+                </figure>
               </li>
               <li>
-                <img
-                  src="https://logowik.com/content/uploads/images/flutter5786.jpg"
-                  alt="Flutter Logo"
-                />
+                <figure>
+                  <img
+                    src="https://logowik.com/content/uploads/images/flutter5786.jpg"
+                    alt="Flutter"
+                  />
+                  <figcaption>Flutter</figcaption>
+                </figure>
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <section>
+      <!-- <section>
         <div id="contact">
           <h2>Contact</h2>
           <p>
@@ -97,21 +103,34 @@
             <li>phoneNo:0925419229</li>
           </ul>
         </div>
-      </section>
-      <footer>
-        <p>&copy; 2023 My Website</p>
+      </section> -->
+      <section>
+  <div id="contact">
+    <h2>Contact</h2>
+    <p>
+      Feel free to get in touch with me via the following contacts which
+      are given below.And I am intersted and ready to work with you.
+    </p>
+    <ul>
+      <li><a href="mailto:gebreagumass@gmail.com">Email: gebreagumass@gmail.com</a></li>
+      <li><a href="https://t.me/gebrehiwot89">Telegram: @gebrehiwot89</a></li>
+      <li><a href="https://www.instagram.com/gebreagumass/">Instagram:Gebrehiwot Agumass</a></li>
+      <li>Phone: +251925419229</li>
+    </ul>
+  </div>
+</section>
+
+      <footer class="footer">
+        <p class="parfooter">&copy; 2023 My Website</p>
       </footer>
     </div>
     <script>
-      // Get all the links in the navigation menu
       const links = document.querySelectorAll("nav a");
-
-      // Loop through the links and add a click event listener to each one
       links.forEach((link) => {
         link.addEventListener("click", (event) => {
-          event.preventDefault(); // prevent the default link behavior
-          const section = document.querySelector(link.getAttribute("href")); // get the section based on the link's href attribute
-          section.scrollIntoView({ behavior: "smooth" }); // scroll to the section smoothly
+          event.preventDefault();
+          const section = document.querySelector(link.getAttribute("href"));
+          section.scrollIntoView({ behavior: "smooth" });
         });
       });
     </script>
